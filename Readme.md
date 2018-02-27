@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Семен Белозеров](https://up.htmlacademy.ru/htmlcss/20/user/275801).
-* Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer).
+* Наставник: [Никита Сигов](https://up.htmlacademy.ru/htmlcss/20/user/17860).
 
 ---
 
