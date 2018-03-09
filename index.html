@@ -11,9 +11,9 @@
             <img src="img/header-logo.png" alt="City of Cedona" width="135" height="70">
           </a>
           <ul class="site-navigation">
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="media.html">Фото и видео</a></li>
-            <li><a href="map.html">Карта штата</a></li>
+            <li><a href="info.html" class="site-navigation-disable">Информация</a></li>
+            <li><a href="media.html" class="site-navigation-disable">Фото и видео</a></li>
+            <li><a href="map.html" class="site-navigation-disable">Карта штата</a></li>
             <li><a href="hotels.html">Гостиница</a></li>
           </ul>
         </nav>
@@ -88,6 +88,23 @@
           <a href="#" class="button">Поиск гостиницы в Седоне</a>
         </div>
       </section>
+      <section class="search-hotels">
+        <h2 class="visually-hidden">Форма поиска</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="arrival-date">Дата заезда:</label>
+            <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for="departure-date">Дата выезда:</label>
+            <input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017">
+          </p>
+          <p>
+            <label for=""></label>
+            <input type="number" name="" value="">
+          </p>
+        </form>
+      </section>
       <section class="search-map">
         <!--Карта-->
       </section>
@@ -102,11 +119,9 @@
           </ul>
         </div>
         <p class="footer-copyright">
-          <span>websyte by</span><a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+          <span>websyte by</span><a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         </p>
       </footer>
-      <section class="search-form">
-        <!--Форма-->
-      </section>
+
   </body>
 </html>
