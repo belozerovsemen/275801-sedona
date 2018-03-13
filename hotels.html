@@ -13,10 +13,10 @@
           <img src="img/header-logo.png" alt="City of Cedona" width="135" height="70">
         </a>
       <ul class="site-navigation">
-        <li><a href="info.html" class="site-navigation-disable">Информация</a></li>
-        <li><a href="media.html" class="site-navigation-disable">Фото и видео</a></li>
-        <li><a href="map.html" class="site-navigation-disable">Карта штата</a></li>
-        <li><a href="hotels.html" class="site-navigation-current">Гостиница</a></li>
+        <li><a href="info.html" class="site-navigation-link">Информация</a></li>
+        <li><a href="media.html" class="site-navigation-link">Фото и видео</a></li>
+        <li><a href="map.html" class="site-navigation-link">Карта штата</a></li>
+        <li><a href="hotels.html" class="site-navigation-link site-navigation-current">Гостиница</a></li>
       </ul>
     </nav>
   </header>
@@ -29,53 +29,49 @@
           <ul>
             <li class="hotel-options-item">
               <label for="swimming-pool-checkbox">
-                <span class="checkbox-indicator"></span>
                 <input type="checkbox" name="swimming-pool-checkbox" id="swimming-pool-checkbox" checked>
                 Бассейн
               </label>
             </li>
             <li class="hotel-options-item">
               <label for="parking-checkbox">
-                <span class="checkbox-indicator"></span>
                 <input type="checkbox" name="parking-checkbox" id="parking-checkbox">
                 Парковка
               </label>
             </li>
             <li class="hotel-options-item">
               <label for="wi-fi-checkbox">
-                <span class="checkbox-indicator"></span>
                 <input type="checkbox" name="wi-fi-checkbox" id="wi-fi-checkbox">
                 Wi-Fi
               </label>
             </li>
           </ul>
         </fieldset>
+
         <fieldset>
           <legend>Тип жилья:</legend>
           <ul>
             <li class="hotel-options-item">
               <label for="hotel-checkbox">
-                <span class="checkbox-indicator"></span>
                 <input type="checkbox" name="hotel-checkbox" id="hotel-checkbox" checked>
                 Гостиница
               </label>
             </li>
             <li class="hotel-options-item">
               <label for="motel-checkbox">
-                <span class="checkbox-indicator"></span>
                 <input type="checkbox" id="motel-checkbox" name="motel-checkbox" checked>
                 Мотель
               </label>
             </li>
             <li class="hotel-options-item">
               <label for="apartment-checkbox">
-                <span class="checkbox-indicator"></span>
                 <input type="checkbox" name="apartment-checkbox" id="apartment-checkbox" checked>
                 Апартаменты
               </label>
             </li>
           </ul>
         </fieldset>
+
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
           <ul>
@@ -96,29 +92,29 @@
       <h2 class="visually-hidden">Результат поиска:</h2>
       <div class="sorting-menu">
         <b>Найдено: 3</b>
+        <span>Сортировка:</span>
         <ul class="sorting-left-list">
+
           <li class="sorting-menu-item">
-            <span>Сортировка:</span>
+            <a class="sorting-button">По цене</a>
           </li>
           <li class="sorting-menu-item">
-            <button class="sorting-button" type="submit">По цене</button>
+            <a class="sorting-button">По типу</a>
           </li>
           <li class="sorting-menu-item">
-            <button class="sorting-button" type="submit">По типу</button>
-          </li>
-          <li class="sorting-menu-item">
-            <button class="sorting-button" type="submit">По рейтингу</button>
+            <a class="sorting-button">По рейтингу</a>
           </li>
         </ul>
         <ul class="sorting-right-list">
           <li>
-            <button class="arrow-up" type="submit">Up</button>
+            <a class="arrow-up">Прибавить</a>
           </li>
           <li>
-            <button class="arrow-down" type="submit" >Down</button>
+            <a class="arrow-down">Отнять</a>
           </li>
         </ul>
       </div>
+
       <ul class="result-list">
         <li class="result-item">
           <img src="img/Amara.jpg" alt="Amara resort & spa" width="135" height="90">

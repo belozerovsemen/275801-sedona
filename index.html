@@ -13,10 +13,10 @@
             <img src="img/header-logo.png" alt="City of Cedona" width="135" height="70">
           </a>
       <ul class="site-navigation">
-        <li><a href="info.html" class="site-navigation-disable">Информация</a></li>
-        <li><a href="media.html" class="site-navigation-disable">Фото и видео</a></li>
-        <li><a href="map.html" class="site-navigation-disable">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиница</a></li>
+        <li><a href="info.html" class="site-navigation-link">Информация</a></li>
+        <li><a href="media.html" class="site-navigation-link">Фото и видео</a></li>
+        <li><a href="map.html" class="site-navigation-link">Карта штата</a></li>
+        <li><a href="hotels.html" class="site-navigation-link">Гостиница</a></li>
       </ul>
     </nav>
   </header>
@@ -84,51 +84,51 @@
       </ul>
     </div>
     <section class="search">
+      <h2 class="visually-hidden">Поск гостиниц в Седоне</h2>
+
       <div class="search-top-content">
         <b>Заинтересовались?</b>
         <p>Укажите предролагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="top-content-button" type="submit">Поиск гостиницы в Седоне</button>
       </div>
-    </section>
-    <section class="search-hotels">
-      <h2 class="visually-hidden">Форма поиска</h2>
+
+
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="search-form-item">
           <label for="arrival-date">
             Дата заезда:
             <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
-            <span class="calendar-icon"></span>
           </label>
         </p>
         <p class="search-form-item">
           <label for="departure-date">
             Дата выезда:
             <input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017">
-            <span class="calendar-icon"></span>
           </label>
         </p>
         <p>
           <label for="adult-count">
             Взрослые:
-            <span class="minus-icon"></span>
+            <button class="minus-icon" type="submit">minus</button>
             <input type="text" name="adult-count" id="adult-count" placeholder="2">
-            <span class="plus-icon"></span>
+            <button class="plus-icon" type="submit">plus</button>
           </label>
         </p>
         <p class="search-form-item">
           <label for="kids-count">
             Дети:
-            <span class="minus-icon"></span>
+            <button class="minus-icon" type="submit">minus</button>
             <input type="text" name="kids-count" id="kids-count" placeholder="0">
-            <span class="plus-icon"></span>
+            <button class="plus-icon">plus</button>
           </label>
         </p>
         <a class="search-form-button" href="#">Найти</a>
       </form>
-    </section>
-    <section class="search-map">
+
+    <div class="search-map">
       <h2 class="visually-hidden">Карта</h2>
 
+    </div>
     </section>
   </main>
   <footer class="main-footer">
