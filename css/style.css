@@ -258,3 +258,124 @@ a{
 .social-button{
   text-decoration: none;
 }
+.site-navigation .site-navigation-current{
+  color: #766357;
+}
+.hotel-options{
+  background-image: url("../img/hotel-options-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+}
+.hotel-options-form fieldset{
+  border: none;
+}
+.hotel-options-form ul{
+  list-style: none;
+  font-family: "PT Sans Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.hotel-options-form legend{
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+.options-form-button{
+  font-family: "PT Sans Regular", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  background: none;
+}
+.options-form-button:hover,
+.options-form-button:focus{
+  background-color: #ffffff;
+  color: #000000;
+}
+.sorting-menu{
+  font-size: 12px;
+  line-height: 18px;
+}
+.sorting-menu b{
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.sorting-menu-item{
+  list-style: none;
+}
+.sorting-right-list{
+  list-style: none;
+}
+.sorting-button{
+  color: #cacaca;
+  border-bottom: 1px dotted #81b3d2;
+}
+.sorting-button:hover,
+.sorting-button:focus{
+  color: #81b3d2;
+}
+.sorting-button:active{
+  color: #000000;
+  border-bottom: none;
+}
+.sorting-button-current{
+  color: #81b3d2;
+  border-bottom: none;
+}
+.result-list{
+  list-style: none;
+  line-height: 21px;
+}
+.result-item{
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.result-item-caption{
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+.result-item-caption:hover,
+.result-item-caption:focus{
+  color: #81b3d2;
+}
+.result-item-caption:active{
+  color: #cacaca;
+}
+.result-list-button{
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.result-list-button:hover,
+.result-list-button:focus{
+  background-color: #669ec0;
+}
+.result-list-button:active{
+  background-color: #5496bd;
+  color: #94b9d2;
+}
+.button-right{
+  background-color: #766357;
+}
+.button-right:hover,
+.button-right:focus{
+  background-color: #604e43;
+}
+.button-right:active{
+  background-color: #503e33;
+  color: #928a85;
+}
+.rating{
+  background-color: #f2f2f2;
+}
