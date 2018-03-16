@@ -1,9 +1,15 @@
 @font-face {
   font-family: "PT Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans.woff") format("woff");
   src: url("../fonts/ptsans.woff2") format("woff2") ;
 }
 @font-face {
   font-family: "PT Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans.woff") format("woff");
   src: url("../fonts/ptsansbold.woff2") format("woff2");
 }
 
@@ -25,8 +31,6 @@ a{
 .site-navigation{
   font-family: "PT Sans Bold", Arial, sans-serif;
   list-style: none;
-  font-weight: 700;
-
 }
 .site-navigation a{
   color: #000000;
@@ -80,7 +84,6 @@ a{
 .intro-content b{
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
-  font-weight: 700;
 }
 .promo-top{
   background-color: #81b3d2;
@@ -94,7 +97,6 @@ a{
 .promo-top-left h3{
   font-size: 21px;
   font-family: "PT Sans Bold", Arial, sans-serif;
-  font-weight: 700;
 }
 .promo-top-right{
   width: 800px;
@@ -112,7 +114,6 @@ a{
 }
 .features-item h3{
   font-family: "PT Sans Bold", Arial, sans-serif;
-  font-weight: 700;
   font-size: 21px;
   line-height: 21px;
 }
@@ -151,7 +152,6 @@ a{
 .promo-bottom-right h3{
   font-size: 21px;
   font-family: "PT Sans Bold", Arial, sans-serif;
-  font-weight: 700;
 }
 .promo-bottom-features{
   background-color: #eeeeee;
@@ -165,7 +165,6 @@ a{
 }
 .bottom-list-items h3{
   font-family: "PT Sans Bold", Arial, sans-serif;
-  font-weight: 700;
   font-size: 21px;
   line-height: 21px;
 }
@@ -175,14 +174,12 @@ a{
 }
 .search-top-content b{
   font-family: "PT Sans Bold", Arial, sans-serif;
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
 }
 .top-content-button{
   text-align: center;
   font-family: "PT Sans Bold", Arial, sans-serif;
-  font-weight: 700;
   color: #ffffff;
   font-size: 21px;
   line-height: 26px;
@@ -200,7 +197,6 @@ a{
 }
 .search-form{
   font-family: "PT Sans Bold", Arial, sans-serif;
-  font-weight: 700;
 }
 .search-form input{
   font: inherit;
@@ -209,7 +205,6 @@ a{
 }
 ::-webkit-input-placeholder{
   font-family: "PT Sans Bold", Arial, sans-serif;
-  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
@@ -224,7 +219,6 @@ a{
   text-decoration: none;
   text-align: center;
   font-family: "PT Sans Bold", Arial, sans-serif;
-  font-weight: 700;
   color: #ffffff;
   font-size: 21px;
   line-height: 26px;
@@ -247,7 +241,6 @@ a{
 .footer-hashtag a{
   text-decoration: none;
   font-family: "PT Sans Bold", Arial, sans-serif;
-  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
@@ -273,19 +266,16 @@ a{
 .hotel-options-form ul{
   list-style: none;
   font-family: "PT Sans Regular", Arial, sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
 }
 .hotel-options-form legend{
   font-family: "PT Sans Bold", Arial, sans-serif;
-  font-weight: 700;
   font-size: 16px;
   line-height: 21px;
 }
 .options-form-button{
   font-family: "PT Sans Regular", Arial, sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -304,7 +294,6 @@ a{
 }
 .sorting-menu b{
   font-family: "PT Sans Bold", Arial, sans-serif;
-  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
@@ -340,7 +329,6 @@ a{
 }
 .result-item-caption{
   font-family: "PT Sans Bold", Arial, sans-serif;
-  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
