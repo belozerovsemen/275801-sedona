@@ -45,8 +45,12 @@ a{
 .intro{
   height: 510px;
   background-color: #4b7494;
-  background-image: url("../img/intro-bg.jpg");
-  background-size: cover;
+  background-image:
+  url("../img/intro-mask-bg.png"),
+  url("../img/intro-bg.jpg");
+  background-size:
+  contain,
+  cover;
   background-repeat: no-repeat;
 }
 .intro-top{
@@ -73,11 +77,7 @@ a{
   background-image: url("../img/intro-because-bg.png");
   background-repeat: no-repeat;
 }
-.intro-mask{
-  height: 85px;
-  background-image: url("../img/intro-mask-bg.png");
-  background-repeat: no-repeat;
-}
+
 .intro-content{
   text-align: center;
 }
