@@ -24,14 +24,30 @@ body{
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
+
+  width: 1200px;
 }
 a{
   text-decoration: none;
 }
+
+.main-menu{
+  display: flex;
+
+  width: 1056px;
+}
+.main-header-logo{
+  width: 135px;
+  height: 70px;
+}
 .site-navigation{
   font-family: "PT Sans Bold", Arial, sans-serif;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
+
 .site-navigation a{
   color: #000000;
 }
@@ -51,7 +67,17 @@ a{
   background-size:
   contain,
   cover;
+  background-position:
+  left 0 bottom 0,
+  center center;
+
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+
 }
 .intro-top{
   width: 188px;
@@ -87,6 +113,7 @@ a{
 }
 .promo-top{
   background-color: #81b3d2;
+  display: flex;
 }
 .promo-top-left{
   font-size: 14px;
@@ -105,12 +132,18 @@ a{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
 .features-list{
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .features-item{
   text-align: center;
   line-height: 21px;
+  width: 400px;
 }
 .features-item h3{
   font-family: "PT Sans Bold", Arial, sans-serif;
@@ -135,6 +168,7 @@ a{
 }
 .promo-bottom{
   background-color: #81b3d2;
+  display: flex;
 }
 .promo-bottom-left{
   width: 800px;
@@ -157,6 +191,9 @@ a{
   background-color: #eeeeee;
 }
 .promo-bottom-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .bottom-list-items{
@@ -245,8 +282,14 @@ a{
   line-height: 26px;
   color: #000000;
 }
+.main-footer{
+  display: flex;
+}
 .main-footer ul{
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
 }
 .social-button{
   text-decoration: none;
@@ -259,6 +302,9 @@ a{
   background-position: center center;
   background-size: cover;
   color: #fff;
+}
+.hotel-options-form{
+  display: flex;
 }
 .hotel-options-form fieldset{
   border: none;
@@ -288,7 +334,9 @@ a{
   background-color: #ffffff;
   color: #000000;
 }
+
 .sorting-menu{
+  display: flex;
   font-size: 12px;
   line-height: 18px;
 }
@@ -296,6 +344,16 @@ a{
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
+}
+.sorting-left-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.sorting-right-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 .sorting-menu-item{
   list-style: none;
