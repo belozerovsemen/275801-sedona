@@ -5,6 +5,7 @@
   src: url("../fonts/ptsans.woff") format("woff");
   src: url("../fonts/ptsans.woff2") format("woff2") ;
 }
+
 @font-face {
   font-family: "PT Sans Bold";
   font-style: normal;
@@ -13,9 +14,14 @@
   src: url("../fonts/ptsansbold.woff2") format("woff2");
 }
 
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+}
+
 body{
-  margin: 0;
-  padding: 0;
   width: 1200px;
   font-family: "PT Sans Regular", Arial, sans-serif;
   font-weight: 400;
@@ -24,17 +30,19 @@ body{
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
-
-  width: 1200px;
 }
 a{
   text-decoration: none;
 }
-
+.main-header{
+  width: 100%;
+}
 .main-menu{
   display: flex;
-
+  min-height: 57px;
   width: 1056px;
+  margin: 0 auto;
+
 }
 .main-header-logo{
   width: 135px;
@@ -47,7 +55,10 @@ a{
   padding: 0;
   display: flex;
 }
-
+.site-navigation li{
+  width: 128px;
+  margin-right: 112px;
+}
 .site-navigation a{
   color: #000000;
 }
@@ -68,18 +79,19 @@ a{
   contain,
   cover;
   background-position:
-  left 0 bottom 0,
-  center center;
-
+   0 bottom,
+   0 -5px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-
-
+  padding-top: 70px;
+  padding-bottom: 88px;
 
 }
 .intro-top{
+  margin-top: 10px;
   width: 188px;
   height: 45px;
   background-image: url("../img/intro-welcome-bg.png");
@@ -106,14 +118,20 @@ a{
 
 .intro-content{
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 55px;
 }
 .intro-content b{
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
 }
+.intro-content p{
+  margin-top: 25px;
+}
 .promo-top{
   background-color: #81b3d2;
   display: flex;
+  min-height: 255px;
 }
 .promo-top-left{
   font-size: 14px;
@@ -139,11 +157,13 @@ a{
   list-style: none;
   margin: 0;
   padding: 0;
+  min-height: 330px;
 }
 .features-item{
   text-align: center;
   line-height: 21px;
   width: 400px;
+
 }
 .features-item h3{
   font-family: "PT Sans Bold", Arial, sans-serif;
@@ -169,6 +189,7 @@ a{
 .promo-bottom{
   background-color: #81b3d2;
   display: flex;
+  min-height: 255px;
 }
 .promo-bottom-left{
   width: 800px;
@@ -189,6 +210,8 @@ a{
 }
 .promo-bottom-features{
   background-color: #eeeeee;
+
+  min-height: 255px;
 }
 .promo-bottom-list{
   display: flex;
@@ -199,7 +222,9 @@ a{
 .bottom-list-items{
   line-height: 21px;
   text-align: center;
+  width: 400px;
 }
+
 .bottom-list-items h3{
   font-family: "PT Sans Bold", Arial, sans-serif;
   font-size: 21px;
@@ -275,6 +300,13 @@ a{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.main-footer{
+  display: flex;
+  min-height: 120px;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
 .footer-hashtag a{
   text-decoration: none;
   font-family: "PT Sans Bold", Arial, sans-serif;
@@ -282,8 +314,8 @@ a{
   line-height: 26px;
   color: #000000;
 }
-.main-footer{
-  display: flex;
+.footer-social{
+  width: 170px;
 }
 .main-footer ul{
   margin: 0;
@@ -298,6 +330,7 @@ a{
   color: #766357;
 }
 .hotel-options{
+  min-height: 220px;
   background-image: url("../img/hotel-options-bg.jpg");
   background-position: center center;
   background-size: cover;
@@ -305,9 +338,13 @@ a{
 }
 .hotel-options-form{
   display: flex;
+  justify-content: space-around;
 }
 .hotel-options-form fieldset{
   border: none;
+}
+.hotel-options-form fieldset:nth-child(3){
+
 }
 .hotel-options-form ul{
   list-style: none;
@@ -328,15 +365,20 @@ a{
   text-transform: uppercase;
   border: 2px solid #ffffff;
   background: none;
+  align-self: flex-end;
+  margin-right: 160px;
 }
 .options-form-button:hover,
 .options-form-button:focus{
   background-color: #ffffff;
   color: #000000;
 }
-
+.search-result{
+  min-height: 88px;
+}
 .sorting-menu{
   display: flex;
+  justify-content: space-around;
   font-size: 12px;
   line-height: 18px;
 }
@@ -380,10 +422,13 @@ a{
 .result-list{
   list-style: none;
   line-height: 21px;
+  margin-left: 73px;
+  padding: 0;
 }
 .result-item{
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
+  min-height: 150px;
 }
 .result-item-caption{
   font-family: "PT Sans Bold", Arial, sans-serif;
