@@ -1017,8 +1017,9 @@ input:checked:disabled + label{
 
 .rating{
   background-color: #f2f2f2;
-  margin-bottom: 4px;
-  margin-right: 10px;
+  margin-bottom: 0;
+  margin-right: 0;
+  padding: 3px 12px 3px 14px;
 }
 .inner-page .main-footer{
   padding: 10px 100px 50px 132px;
