@@ -434,7 +434,8 @@ input[type="radio"].visually-hidden {
 }
 
 
-::-webkit-input-placeholder{
+/*::-webkit-input-placeholder*/
+.search-form input::placeholder{
   font-family: "PT Sans Bold", Arial, sans-serif;
   text-transform: uppercase;
   color: #000000;
@@ -512,7 +513,7 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   background-color: #81b3d2;
   display: inline-block;
-  padding: 15px 195px;
+  padding: 15px 197px;
   margin-top: auto;
 
 }
@@ -607,7 +608,7 @@ input[type="radio"].visually-hidden {
   color: #766357;
 }
 .hotel-options{
-  min-height: 220px;
+
   background-image: url("../img/hotel-options-bg.jpg");
   background-position: center center;
   background-size: cover;
@@ -616,7 +617,7 @@ input[type="radio"].visually-hidden {
 .hotel-options-form{
   display: flex;
   justify-content: space-between;
-  padding: 26px 58px 0px 74px;
+  padding: 26px 70px 22px 74px;
   box-sizing: border-box;
 }
 .hotel-options-form fieldset{
@@ -702,7 +703,7 @@ input:checked:disabled + label{
   margin-bottom: 15px;
 }
 .filter-range {
-  width: 330px;
+  width: 318px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -731,24 +732,30 @@ input:checked:disabled + label{
   transform: translate(-50%, -50%);
 }
 .price-controls label {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
-  cursor: pointer;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
 }
 .price-controls .min-price,
 .price-controls .max-price {
   width: 150px;
-  padding-left: 65px;
 }
 .price-controls input {
-  width: 50px;
+  text-align: center;
+  width: 150px;
   margin: 0;
   color: inherit;
   font: inherit;
   background: none;
   border: none;
+  height: 100%;
+  margin-left: 5px;
+}
+.price-controls input::placeholder{
+  font-family: "PT Sans Regular", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .range-controls {
   position: relative;
@@ -777,9 +784,9 @@ input:checked:disabled + label{
 }
 .range-toggle:hover{
   border: 9px solid #ffffff;
-  -webkit-transition: all 0.1s;
-  -o-transition: all 0.1s;
-  transition: all 0.1s;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .range-toggle-min {
   left: 0;
@@ -796,11 +803,10 @@ input:checked:disabled + label{
   text-transform: uppercase;
   border: 2px solid #ffffff;
   background: none;
-  align-self: flex-end;
   display: block;
   padding: 5px 35px;
-  margin: 0 auto;
-
+  margin-left: 83px;
+  margin-top: 5px;
 }
 
 .options-form-button:hover,
@@ -828,6 +834,8 @@ input:checked:disabled + label{
   display: flex;
   margin-right: auto;
   justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 2px;
 }
 .sorting-left-list{
   margin: 0;
@@ -840,6 +848,8 @@ input:checked:disabled + label{
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: flex-end;
+  padding-bottom: 2px;
 }
 .arrow-up{
   margin-right: 10px;
@@ -895,19 +905,21 @@ input:checked:disabled + label{
   border-bottom: none;
 }
 .result-list{
+  margin: 0;
+  padding: 0;
   list-style: none;
   line-height: 21px;
   display: flex;
   flex-direction: column;
   list-style: none;
   line-height: 21px;
-  padding-left: 0;
+
 }
 .result-list li{
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  height: 150px;
-  padding: 14px 73px 45px 73px;
+  padding: 28px 73px 29px 73px;
+  max-height: 152px;
 }
 .result-item{
   display: flex;
@@ -923,9 +935,17 @@ input:checked:disabled + label{
 
 .result-item h3{
   margin: 0;
+  margin-bottom: 2px;
 }
 .result-item p{
   margin-top: auto;
+}
+.result-item-middle p:nth-child(2){
+  display:flex;
+  justify-content: space-between;
+}
+.result-item-middle p:nth-child(2) span:nth-child(2){
+  margin-right: 78px;
 }
 .item-buttons{
   margin-bottom: 0;
@@ -947,7 +967,7 @@ input:checked:disabled + label{
   font-family: "PT Sans Bold", Arial, sans-serif;
   color: #ffffff;
   background-color: #81b3d2;
-  padding: 5px 15px;
+  padding: 4px 17px;
   display: inline-block;
 }
 .result-list-button:hover,
@@ -977,6 +997,7 @@ input:checked:disabled + label{
 }
 .star-rating{
   height: 17px;
+  margin-right: 0;
 }
 .four-star{
   width: 71px;
@@ -996,7 +1017,16 @@ input:checked:disabled + label{
 
 .rating{
   background-color: #f2f2f2;
+  margin-bottom: 4px;
+  margin-right: 10px;
 }
 .inner-page .main-footer{
   padding: 10px 100px 50px 132px;
+  background-color:none;
+  margin-top: 0;
+  display: flex;
+  position: inherit;
+  justify-content: space-between;
+  padding: 38px 97px 35px 132px;
+  z-index: 0;
 }
