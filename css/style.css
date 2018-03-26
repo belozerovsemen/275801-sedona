@@ -85,26 +85,26 @@ input[type="radio"].visually-hidden {
   width: 100%;
 }
 .site-navigation li{
-  width: 128px;
+  width: 100px;
 }
 .site-navigation li:nth-child(1),
 .site-navigation li:nth-child(2){
   text-align: left;
 }
+.site-navigation li:nth-child(1){
+  margin-right: 140px;
+}
 .site-navigation li:nth-child(2){
-  margin-left: 112px;
+  margin-right: auto;
 }
 .site-navigation li:nth-child(3),
 .site-navigation li:nth-child(4){
   text-align: right;
 }
-.site-navigation li:nth-child(3){
-  margin-left: auto;
-}
 .site-navigation li:nth-child(4){
-  margin-right: 4px;
-  margin-left: 110px;
+  margin-left: 144px;
 }
+
 .site-navigation-link{
   display: block;
   vertical-align: middle;
@@ -196,7 +196,8 @@ input[type="radio"].visually-hidden {
   text-align: center;
   padding-top: 57px;
   padding-bottom: 38px;
-
+  padding-right: 5px;
+  padding-left: 5px;
 }
 .intro-content b{
   font-family: "PT Sans Bold", Arial, sans-serif;
@@ -218,7 +219,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   color: #ffffff;
   text-align: center;
-  padding: 26px 65px 46px 62px;
+  padding: 26px 65px 43px 62px;
 }
 .promo-top-left h3{
   font-size: 21px;
@@ -292,7 +293,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   color: #ffffff;
   text-align: center;
-  padding: 26px 60px 26px 52px;
+  padding: 26px 39px 26px 43px;
 }
 .promo-bottom-right h3{
   font-size: 21px;
@@ -524,16 +525,19 @@ input[type="radio"].visually-hidden {
   color: #94b9d2;
 }
 .search-map{
-  height: 473px;
+  height: 593px;
   background-image: url("../img/search-map-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .main-footer{
+  background-color: rgba(255,255,255, 0.9);
+  margin-top: -120px;
   display: flex;
-  min-height: 120px;
+  position: relative;
   justify-content: space-between;
-  padding: 35px 100px 35px 130px
+  padding: 35px 100px 35px 130px;
+  z-index: 1;
 }
 .footer-hashtag{
   margin-top: 9px;
@@ -612,7 +616,7 @@ input[type="radio"].visually-hidden {
 .hotel-options-form{
   display: flex;
   justify-content: space-between;
-  padding: 26px 58px 0px 76px;
+  padding: 26px 58px 0px 74px;
   box-sizing: border-box;
 }
 .hotel-options-form fieldset{
@@ -621,7 +625,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 .hotel-options-form fieldset:nth-child(1){
-  margin-right: 117px;
+  margin-right: 119px;
 }
 .hotel-options-form fieldset:nth-child(2) {
     margin-right: auto;
@@ -639,7 +643,7 @@ input[type="radio"].visually-hidden {
   margin-top: 10px;
 }
 .hotel-options-item{
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .hotel-options-item:last-child{
   margin-bottom: 0;
