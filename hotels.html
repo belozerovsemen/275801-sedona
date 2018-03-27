@@ -71,12 +71,8 @@
             Стоимость в сутки (р):
           </div>
           <div class="price-controls">
-            <label class="min-price">
-              <input type="text" name="min-price" placeholder="от 0">
-            </label>
-            <label class="max-price">
-              <input type="text" name="max-price" placeholder="до 3000">
-            </label>
+            <input class="min-price" type="text" name="min-price" placeholder="от 0">
+            <input class="max-price" type="text" name="max-price" placeholder="до 3000">
           </div>
           <div class="range-controls">
             <div class="scale">
@@ -135,7 +131,7 @@
       </div>
 
       <ul class="result-list">
-        <li>
+        <li class="result-element">
           <article class="result-item">
             <img src="img/Amara.jpg" alt="Amara resort & spa" width="135" height="90">
                 <div class="result-item-middle">
@@ -150,12 +146,17 @@
                   </p>
                 </div>
                 <div class="result-item-right">
-                  <span class="star-rating four-star"></span>
+                  <ul class="star-rating">
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                  </ul>
                   <span class="rating">рейтинг: 8.5</span>
                 </div>
           </article>
         </li>
-        <li>
+        <li class="result-element">
           <article class="result-item">
             <img src="img/Desert.jpg" alt="Desert Qual Inn" width="135" height="90">
             <div class="result-item-middle">
@@ -170,12 +171,16 @@
               </p>
             </div>
             <div class="result-item-right">
-              <span class="star-rating three-star"></span>
+              <ul class="star-rating">
+                <li class="star"></li>
+                <li class="star"></li>
+                <li class="star"></li>
+              </ul>
               <span class="rating">рейтинг: 8.9</span>
             </div>
           </article>
         </li>
-        <li>
+        <li class="result-element">
           <article class="result-item">
             <img src="img/Villas.jpg" alt="Villas At Poco Diablo" width="135" height="90">
             <div class="result-item-middle">
@@ -190,7 +195,10 @@
               </p>
             </div>
             <div class="result-item-right">
-              <span class="star-rating two-star"></span>
+              <ul class="star-rating">
+                <li class="star"></li>
+                <li class="star"></li>
+              </ul>
               <span class="rating">рейтинг: 9.2</span>
             </div>
           </article>

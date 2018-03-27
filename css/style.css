@@ -20,7 +20,9 @@
 html{
   box-sizing: border-box;
 }
-
+::-moz-placeholder, :-moz-placeholder {
+    opacity: 1;
+}
 body{
   width: 100%;
   font-family: "PT Sans Regular", Arial, sans-serif;
@@ -84,15 +86,13 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 100%;
 }
-.site-navigation li{
-  width: 100px;
-}
+
 .site-navigation li:nth-child(1),
 .site-navigation li:nth-child(2){
   text-align: left;
 }
 .site-navigation li:nth-child(1){
-  margin-right: 140px;
+  margin-right: 146px;
 }
 .site-navigation li:nth-child(2){
   margin-right: auto;
@@ -102,7 +102,7 @@ input[type="radio"].visually-hidden {
   text-align: right;
 }
 .site-navigation li:nth-child(4){
-  margin-left: 144px;
+  margin-left: 164px;
 }
 
 .site-navigation-link{
@@ -537,7 +537,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   position: relative;
   justify-content: space-between;
-  padding: 35px 100px 35px 130px;
+  padding: 38px 99px 35px 131px;
   z-index: 1;
 }
 .footer-hashtag{
@@ -687,11 +687,7 @@ input:checked:disabled + label::before{
   display: inline-block;
   background-repeat: no-repeat;
 }
-/*input:disabled + label,
-input:checked:disabled + label{
-  color: #6a6a6a;
-}
-*/
+
 .hotel-options-item label{
   cursor: pointer;
 }
@@ -715,7 +711,6 @@ input:checked:disabled + label{
 }
 .price-controls {
   position: relative;
-  font-size: 0;
   height: 36px;
   margin-bottom: 20px;
   border: 2px solid #ffffff;
@@ -737,10 +732,7 @@ input:checked:disabled + label{
     vertical-align: top;
     cursor: pointer;
 }
-.price-controls .min-price,
-.price-controls .max-price {
-  width: 150px;
-}
+
 .price-controls input {
   text-align: center;
   width: 150px;
@@ -751,11 +743,15 @@ input:checked:disabled + label{
   border: none;
   height: 100%;
   margin-left: 5px;
+  margin-top: 3px;
 }
-.price-controls input::placeholder{
+.min-price::placeholder,
+.max-price::placeholder{
   font-family: "PT Sans Regular", Arial, sans-serif;
   text-transform: uppercase;
   color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
 }
 .range-controls {
   position: relative;
@@ -915,7 +911,7 @@ input:checked:disabled + label{
   line-height: 21px;
 
 }
-.result-list li{
+.result-element{
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   padding: 28px 73px 29px 73px;
@@ -996,23 +992,20 @@ input:checked:disabled + label{
   flex-direction: column;
 }
 .star-rating{
-  height: 17px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
   margin-right: 0;
 }
-.four-star{
-  width: 71px;
+.star{
+  height: 17px;
+  width: 18px;
   background-image: url("../img/result-item-star.svg");
-  background-repeat: repeat-x;
+  margin-right: 5px;
 }
-.three-star{
-  width: 54px;
-  background-image: url("../img/result-item-star.svg");
-  background-repeat: repeat-x;
-}
-.two-star{
-  width: 36px;
-  background-image: url("../img/result-item-star.svg");
-  background-repeat: repeat-x;
+.star:last-child{
+  margin-right: 0;
 }
 
 .rating{
