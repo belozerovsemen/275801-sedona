@@ -743,7 +743,7 @@ input:checked:disabled + label::before{
   border: none;
   height: 100%;
   margin-left: 5px;
-  margin-top: 3px;
+
 }
 .min-price::placeholder,
 .max-price::placeholder{
@@ -751,7 +751,6 @@ input:checked:disabled + label::before{
   text-transform: uppercase;
   color: #ffffff;
   font-size: 14px;
-  line-height: 21px;
 }
 .range-controls {
   position: relative;
