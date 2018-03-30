@@ -1275,8 +1275,10 @@ input:checked:disabled + label::before{
   line-height: 21px;
 
 }
-.result-element{
+.result-element:first-child{
   border-top: 1px solid #e5e5e5;
+}
+.result-element{
   border-bottom: 1px solid #e5e5e5;
   padding: 28px 73px 29px 73px;
   max-height: 152px;
