@@ -104,6 +104,8 @@ input[type="radio"].visually-hidden {
 }
 .site-navigation li{
   width: 100px;
+  padding-top: 14px;
+  padding-bottom: 13px;
 }
 .site-navigation li:nth-child(1),
 .site-navigation li:nth-child(2){
@@ -124,10 +126,6 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation-link{
-  display: block;
-  vertical-align: middle;
-  padding-top: 15px;
-  padding-bottom: 10px;
   color: #000000;
 }
 .site-navigation-link:hover,
@@ -696,7 +694,9 @@ input[type="radio"].visually-hidden {
   background-color: #ebebeb;
 }
 .search-form input:focus{
+  outline: none;
   background-color: #ffffff;
+  border:2px solid #e5e5e5;
 }
 .search-form-item .adult-part{
   display: -webkit-box;
@@ -1280,7 +1280,7 @@ input:checked:disabled + label::before{
 }
 .result-element{
   border-bottom: 1px solid #e5e5e5;
-  padding: 28px 73px 29px 73px;
+  padding: 28px 73px 30px 73px;
   max-height: 152px;
 }
 .result-item{
