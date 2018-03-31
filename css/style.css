@@ -604,18 +604,9 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   margin-left: 3px;
 }
-.search-form input{
-  font: inherit;
-  border: none;
-  background-color: #f2f2f2;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 6px;
-  padding-left: 10px;
-  width: 100%;
-}
+
 .search-form-item:nth-child(3) label:nth-child(1){
-  margin-right: 40px;
+  margin-right: 42px;
 }
 .search-form-item:nth-child(3) label:nth-child(3){
   margin-right: 30px;
@@ -628,10 +619,11 @@ input[type="radio"].visually-hidden {
   background-color: #f2f2f2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 6px;
+  padding: 4px;
   padding-left: 10px;
   width: 100%;
-  min-height: 38px;
+  height: 38px;
+  border: 2px solid #f2f2f2;
 }
 
 .calendar-icon:active path,
@@ -692,8 +684,10 @@ input[type="radio"].visually-hidden {
 }
 .search-form input:hover{
   background-color: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 .search-form input:focus{
+
   outline: none;
   background-color: #ffffff;
   border:2px solid #e5e5e5;
@@ -710,12 +704,13 @@ input[type="radio"].visually-hidden {
       flex-basis: 30%;
   position: relative;
   max-width: 115px;
+
 }
 .adult-part input,
 .kids-part input{
   min-width: 115px;
   text-align: center;
-  padding: 0;
+  padding-left: 0;
 }
 
 .minus-icon,
