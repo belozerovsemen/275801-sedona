@@ -7,11 +7,12 @@ var kids = form.querySelector("[name=kids-count]");
 var search = form.querySelector(".search-form-button");
 
 
-arrival.focus();
 
 button.addEventListener("click", function (evt){
 evt.preventDefault();
-form.classList.toggle("search-form-hide");
+
+form.classList.toggle("search-form-show");
+
 });
 
 search.addEventListener("click", function (evt){
