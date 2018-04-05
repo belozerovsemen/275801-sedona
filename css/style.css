@@ -394,6 +394,7 @@ input[type="radio"].visually-hidden {
   border: none;
   background-color: #766357;
   display: inline-block;
+  vertical-align: middle;
   margin-top: 32px;
   padding: 30px 140px;
   position: relative;
@@ -581,7 +582,27 @@ input[type="radio"].visually-hidden {
     opacity: 0;
 }
 }
+@keyframes error {
+  0%,
+ 100% {
+   transform: translateX(-50%);
+ }
 
+ 10%,
+ 30%,
+ 50%,
+ 70%,
+ 90% {
+   transform: translateX(-48%);
+ }
+
+ 20%,
+ 40%,
+ 60%,
+ 80% {
+   transform: translateX(-52%);
+ }
+}
 .search-form-show{
   visibility: visible;
   -webkit-animation: down 0.3s;
@@ -589,6 +610,12 @@ input[type="radio"].visually-hidden {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+}
+.form-error{
+  animation: error 1.2s;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
 }
 .search-form-item{
   display: -webkit-box;
@@ -616,7 +643,10 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   margin-left: 3px;
 }
-
+.search-form-item input[name="arrival-date"],
+.search-form-item input[name="departure-date"]{
+  padding-right: 35px;
+}
 .search-form-item:nth-child(3) label:nth-child(1){
   margin-right: 41px;
 }
@@ -722,7 +752,8 @@ input[type="radio"].visually-hidden {
 .kids-part input{
   min-width: 115px;
   text-align: center;
-  padding-left: 0;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .minus-icon,
@@ -786,6 +817,7 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   background-color: #81b3d2;
   display: inline-block;
+  vertical-align: middle;
   padding: 15px 197px;
   margin-top: auto;
 }
@@ -892,6 +924,7 @@ input[type="radio"].visually-hidden {
 }
 .copyright-logo {
   display: inline-block;
+  vertical-align: middle;
   width: 118px;
   height: 55px;
   position: relative;
@@ -983,6 +1016,7 @@ input:checked + label::before{
   width: 30px;
   height: 30px;
   display: inline-block;
+  vertical-align: top;
   background-repeat: no-repeat;
 
 }
@@ -991,6 +1025,7 @@ input:disabled + label::before{
   width: 30px;
   height: 30px;
   display: inline-block;
+  vertical-align: top;
   background-repeat: no-repeat;
 }
 input:checked:disabled + label::before{
@@ -998,6 +1033,7 @@ input:checked:disabled + label::before{
   width: 30px;
   height: 30px;
   display: inline-block;
+  vertical-align: top;
   background-repeat: no-repeat;
 }
 
@@ -1353,6 +1389,7 @@ input:checked:disabled + label::before{
   background-color: #81b3d2;
   padding: 4px 17px;
   display: inline-block;
+  vertical-align: bottom;
 }
 .result-list-button:hover,
 .result-list-button:focus{
